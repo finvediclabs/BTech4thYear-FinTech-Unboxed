@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTech Unboxed: Personal Finance Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to FinTech Unboxed</h1>
+        <nav>
+            <ul>
+                <li><a href="#income">Income</a></li>
+                <li><a href="#expenses">Expenses</a></li>
+                <li><a href="#goals">Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="income">
+            <h2>Track Your Income</h2>
+            <div id="income-list"></div>
+            <form id="income-form">
+                <input type="text" id="income-source" placeholder="Source" required>
+                <input type="number" id="income-amount" placeholder="Amount" required>
+                <button type="submit">Add Income</button>
+            </form>
+        </section>
+        <section id="expenses">
+            <h2>Track Your Expenses</h2>
+            <div id="expense-list"></div>
+            <form id="expense-form">
+                <input type="text" id="expense-description" placeholder="Description" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+        <section id="goals">
+            <h2>Set Your Financial Goals</h2>
+            <div id="goal-list"></div>
+            <form id="goal-form">
+                <input type="text" id="goal-description" placeholder="Goal Description" required>
+                <input type="number" id="goal-target" placeholder="Target Amount" required>
+                <button type="submit">Set Goal</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 FinTech Unboxed. All rights reserved.</p>
+    </footer>
+    <script src="path/to/your/javascript.js"></script>
+</body>
+</html>
